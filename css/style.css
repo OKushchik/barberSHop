@@ -1,0 +1,220 @@
+* {
+    font-family: Calibri, sans-serif;
+}
+.wrapper {
+    width: 100%;
+}
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background: black;
+    color: white;
+}
+.header a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Segoe Print",sans-serif;
+    color: white;
+}
+.header a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 10px ;
+}
+.header nav {
+    margin-top: 1%;
+    margin-right: 10%;
+}
+.logo {
+    width: 80px;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+.logo img {
+    width: 100%;
+    border-radius: 50%;
+}
+.main {
+    display: flex;
+    width: 100%;
+}
+.main_content {
+    width: 80%;
+    background: url("../img/steve-johnson-8UmEJI_MJyk-unsplash.jpg");
+    background-size: cover;
+    padding-top: 20px;
+}
+.reserve, .academy {
+    background: rgba(0, 0, 0, 0.45) url("../img/men-having-their-haircut-1813272.jpg" ) no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.academy {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.45);
+}
+.banner_content{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    color: white;
+}
+.banner_content h1 {
+    font-size: 30px;
+}
+.about_us {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+.about_us h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.about_us {
+    padding: 15px;
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 15px;
+}
+.advantage_list {
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+}
+.advantage_list img{
+    width: 30px;
+}
+.academy {
+    text-align: center;
+}
+.banner_content a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+}
+.banner_content a:hover {
+    background: rgba(80, 80, 80, 0.88);
+}
+
+aside {
+    width: 20%;
+    background: rgba(2, 2, 2, 0.91);
+    color: white;
+}
+aside a {
+    color: white;
+    text-decoration: none;
+}
+aside a:hover {
+    text-decoration: underline;
+}
+aside h3{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    background: black;
+    color: white;
+}
+.content_box:nth-child(1) {
+    order: 1;
+    width: 70%;
+    margin: 0 auto;
+}
+.content_box:nth-child(2) {
+    order: 3;
+    width: 50%;
+}
+.content_box:nth-child(3) {
+    order: 2;
+    position: relative;
+    width: 50%;
+}
+.footer_description {
+    text-align: center;
+    font-size: 25px;
+}
+.footer_contact_form {
+    width: 50%;
+    margin-left: 20%;
+}
+.footer_contact_form form {
+    display:flex;
+    flex-direction: column;
+}
+.footer_contacts {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    font-size: 20px;
+}
+.footer_contacts h3{
+    text-align: center;
+}
+.footer_contacts ul {
+    list-style: none;
+}
+.footer_contacts a {
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 1090px){
+    .reserve {
+        background: none;
+    }
+    .reserve h1,
+    .reserve p
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .banner_content a {
+        text-align: center;
+        margin: 20px auto;
+        display: block;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .main {
+        display: block;
+    }
+    aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .main_content {
+        width: 100%;
+    }
+    .footer {
+        display: block;
+    }
+    .content_box:nth-child(2) {
+        order: 3;
+        width: 80%;
+    }
+    .footer_contacts {
+        position: relative;
+        top: 0;
+        left: 10%;
+    }
+
+}
