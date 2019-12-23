@@ -48,6 +48,7 @@
 .main_content {
     width: 80%;
     background: url("../img/steve-johnson-8UmEJI_MJyk-unsplash.jpg");
+    background-attachment: fixed;
     background-size: cover;
     padding-top: 20px;
 }
